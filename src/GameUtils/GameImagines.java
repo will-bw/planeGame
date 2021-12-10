@@ -10,7 +10,7 @@ import java.util.Stack;
 
 public class GameImagines {
 
-    public static Image BackgroundImage=Toolkit.getDefaultToolkit().getImage("image//mapback1.jpg");//背景图片
+    public static Image BackgroundImage=Toolkit.getDefaultToolkit().getImage("image//mapback2.jpg");//背景图片
     public static Image myPlane_image=Toolkit.getDefaultToolkit().getImage("image//my_plane.png");
     public static Image boss_image=Toolkit.getDefaultToolkit().getImage("image//BOSS.png");
     public static Image enemy1_image=Toolkit.getDefaultToolkit().getImage("image//enemy1.png");
