@@ -34,7 +34,7 @@ public class BossBullet extends Bullets {
                     Datas.bossBullets.add(new BossBullet(Datas.boss.x + 104, Datas.boss.y + Datas.boss.height + 2, 1));
                     Datas.bossBullets.add(new BossBullet(Datas.boss.x + 122, Datas.boss.y + Datas.boss.height - 16, 2));
                     try {
-                        Thread.sleep(2500);
+                        Thread.sleep(7500);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

@@ -121,8 +121,8 @@ public class CollisionMonitor implements Runnable{
                         new Thread(new Explode(bossBullet.x-20, bossBullet.y-30,gamePanel)).start();
                         bossBullet.y+=900;
                         bossBullet.setBody();
-                        //特殊子弹击中我方飞机，血量减两滴
-                        Datas.myPlane.blood-=2;
+                        //特殊子弹击中我方飞机，血量减15滴
+                        Datas.myPlane.blood-=15;
                         if(Datas.myPlane.blood<=0){
                             Datas.myPlane.isAlive=false;
                             new Thread(new Explode(bossBullet.x, bossBullet.y,gamePanel)).start();
