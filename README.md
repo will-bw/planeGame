@@ -1,34 +1,25 @@
 <h2 align = "center" >飞机大战</h2>
 
-  我大二上期的java大作业，实现飞机大战
-  基本功能已经达到，但是在最后想添加一个重新开始的时候出现每次重新开始后都会莫名其妙可能飞机暂时不受控制
-  并且游戏速度非常快，每次重新开始都会加快速度最后帧率都跟不上刷新，而且貌似飞机删除失败，满屏飞机
+  
+
+### 这是我大二上期的java大作业，要求是做一个飞机大战，具体要求如下：
+
+- 开发一个飞机大战的GUI游戏
+- 这是一个射击游戏，游戏玩家使用键盘控制我方战机，发射炮弹攻击敌机，最后的目标是消灭敌方BOSS
+- 敌机有两种。
+- 敌机一在运动过程中将不断发射炮弹攻击我方战机，敌机一无论在什么地方都可以发射炮弹攻击我方战机。
+- 敌机二没有机炮，不会发射炮弹，只会一直运动。
+- 敌机一和敌机二则会有很多架，而且是根据一定的算法随机出现，具体算法可以自行设计实现。
+- 我方战机可以承受敌方战机发射的炮弹的攻击，但每次被敌方炮弹击中后机身就会遭受一定程度的破坏，破坏到达一定程度后我方战机就会彻底损毁。
+- 如果我方战机与敌机发生碰撞，那么双方都会彻底损毁。
+- 我方战机发射的炮弹与敌方不一样，具体参照游戏截图。
+- 如果我方战机发射的炮弹击中了敌机，那么将产生爆炸效果
+- 敌方BOSS既可以发射普通炮弹，也可以发射威力巨大的炸弹，一旦我方战机被这种巨大的炸弹击中就会彻底损毁。
+- 同样敌方BOSS也具备强大的防御能力，我方战机发射的炮弹需要多次击中敌方BOSS才能将其击毁。
+- 敌方BOSS只有一个，将会在最后才出现。
 
 
-~~~java
-public void reStart(){
-        removeAll();
-        Datas.boss.reSet();
-        Datas.myPlane.reSet();
-        Datas.myBullets.clear();
-        Datas.bossBullets.clear();
-        Datas.enemyBullets.clear();
-        Datas.enemyPlanes.clear();
-        StartGame.state = 1;//游戏开始！
-        myThread.requestFocus();
-        MyBullet.isRun=true;
-        PageUPdate.isRun=true;
-        EnemyPlane.isRun=true;
-        EnemyBullet.isRun=true;
-        CollisionMonitor.isRun=true;
-        BossBullet.isRun=true;
-        PageUPdate.updataCount=70;
-        StartGame.score=0;
-        new Thread(new MyBullet()).start();//我方子弹投放开始
-        new Thread(new PageUPdate(myThread)).start();//页面更新开始
-        new Thread(new EnemyPlane()).start();//敌机投放开始
-        new Thread(new EnemyBullet()).start();//敌机子弹投放开始
-        new Thread(new CollisionMonitor(myThread)).start();//碰撞监测开始
-        new Thread(new BossBullet()).start();
-    }
 
+老师要求飞机素材等照片只能从他发的图片里面扣下来用而且限定死了只能这两种飞机所以并不是很好看。
+
+此外我想要加一个重新开始的功能时出现bug，还没找出原因。

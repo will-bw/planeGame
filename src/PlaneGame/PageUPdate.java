@@ -97,12 +97,12 @@ public class PageUPdate implements Runnable {
                 EnemyPlane.isRun=false;
                 EnemyBullet.isRun=false;
                 MyBullet.isRun=false;*/
-                try {
+                /*try {
                     Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-//                page.reStart();
+                page.reStart();*/
             }
         }
     }

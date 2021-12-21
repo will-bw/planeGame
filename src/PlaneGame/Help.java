@@ -7,9 +7,9 @@ import java.awt.*;
 
 public class Help extends JDialog {
     String help="<html>  欢迎来到飞机大战，游戏规则如下：<br><br>" +
-            "  点击开始游戏按钮开始<br>"+"游戏过程中点击空格暂停游戏<br><br>"+
+            "  点击开始游戏按钮开始<br>"+"游戏过程中点击空格暂停游戏<br>"+
             "  通过方向键来控制飞机移动<br>"+
-            "  我方飞机的生命值为15，<br>敌方普通飞机的生命值为2，<br>boss的生命值为60<br><br>"+
+            "  我方飞机的生命值为15，<br>敌方普通飞机的生命值为2，<br>boss的生命值为60<br>"+
             "  我方子弹伤害为1，敌方普通子弹的伤害为1，<br>  boss的特殊子弹能直接摧毁我方飞机</html>";
 
     JLabel label = new JLabel(new ImageIcon(GameImagines.helpBack));

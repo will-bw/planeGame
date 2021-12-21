@@ -116,7 +116,7 @@ public class GamePanel extends JPanel {
             g.drawImage(GameImagines.start_page, 0, 0, StartGame.FrameWidth, StartGame.FrameHeight, this);
         } else {//游戏开始
             g.drawImage(GameImagines.BackgroundImage, 0, StartGame.bgi_y, 700, 1800, this);//先画背景
-//            遍历所有元素画出来
+
         }
     }
 
